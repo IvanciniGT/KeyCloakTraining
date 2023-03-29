@@ -5,7 +5,7 @@ ENV KC_METRICS_ENABLED=true
 
 WORKDIR /opt/keycloak
 
-ENV KC_HOSTNAME=54.154.167.207
+ENV KC_HOSTNAME=3.250.144.99
 RUN keytool -genkeypair -storepass password -storetype PKCS12 -keyalg RSA -keysize 2048 -dname "CN=server" -alias server -ext "SAN:c=DNS:localhost,IP:$KC_HOSTNAME" -keystore conf/server.keystore
 
 ENV KC_DB=postgres

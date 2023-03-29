@@ -155,3 +155,11 @@ In KeyCloak we have defined in advance that an application called: client_id (ba
 needs to be authenticated whenever a query is made from this clientId... We will have a bunch of options in order to authenticate the client:
 - clientSecret
 - IP Address + Certificate ** This is more secure... as the Certificate is hard to be faked... and at certain point the SECRET could have been exposed
+
+
+KeyCloak is going to store user's password in its database (postgre)
+
+Are those password encrypted in the database?
+
+No... They are Hashed
+The actual password is not stored... just a hash of the password.

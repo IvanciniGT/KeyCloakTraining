@@ -23,3 +23,10 @@ services:
             POSTGRES_PASSWORD:          password
         volumes:
                                       - /home/ubuntu/environment/data/postgresql:/var/lib/postgresql/data
+    my-email-server:                    
+        image:                          mailhog/mailhog
+        container_name:                 mailhog
+        ports:
+                                      - 1025:1025   # smtp
+                                      - 8081:8025
+        
