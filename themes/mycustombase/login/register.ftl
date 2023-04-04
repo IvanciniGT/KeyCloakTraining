@@ -78,7 +78,7 @@
                 <!-- This is for the HTML input field-->
                 <div class="${properties.kcInputWrapperClass!}">
                     <input type="text" id="user.attributes.phone" class="${properties.kcInputClass!}" name="user.attributes.phone"
-                           value="${(register.formData.phone!'')}" autocomplete="phone"
+                           value="${register.formData['user.attributes.phone']!}" autocomplete="phone"
                     />
                     
                     <!-- We are commenting these lineas, as we are not going to validate this field-->
