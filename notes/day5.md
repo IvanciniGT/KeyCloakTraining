@@ -45,3 +45,7 @@ In maven each ARTIFACT (library) is Identified by:
 - ArtifactID        Is an ID identifing an artifact within a GroupId            mybackend
 - GroupId                                                                       com.mycompany
 - Version                                                                       1.0.0
+
+
+------
+
